@@ -6,7 +6,8 @@ A hands-on task involving training and experimenting with a small CNN (or compar
 
 ```
 ├── notebooks/
-│   └── 01_baseline_cnn.ipynb   # Phase 1 & 2 — Lab setup + Baseline
+│   ├── 01_baseline_cnn.ipynb              # Phase 1 & 2 — Lab setup + Baseline
+│   └── 02_tweak1_regularization.ipynb     # Tweak 1 — Baseline vs BatchNorm vs Dropout
 ├── data/                        # CIFAR-10 (auto-downloaded)
 ├── requirements.txt
 └── README.md
@@ -47,6 +48,6 @@ Flatten → Linear(2048→128) → ReLU → Linear(128→10)
 | # | Model | Params | Train Acc | Val Acc | Peak Val Acc | Train–Val Gap | Diagnosis | Notebook |
 |---|---|---|---|---|---|---|---|---|
 | 0 | SimpleCNN (baseline) | 268,650 | 92.82% | 55.10% | 58.70% | +37.72% | Overfitting | [01_baseline_cnn.ipynb](notebooks/01_baseline_cnn.ipynb) |
-| 1 | *TBD* | — | — | — | — | — | — | — |
-| 2 | *TBD* | — | — | — | — | — | — | — |
+| 1 | SimpleCNN + BatchNorm | 269,002 | 99.86% | 55.10% | 55.10% | +47.36% | Overfitting | [02_tweak1_regularization.ipynb](notebooks/02_tweak1_regularization.ipynb) |
+| 2 | SimpleCNN + Dropout | 268,650 | 55.68% | 57.80% | 57.80% | -2.12% | UNDERFITTING | [03_tweak2_dropout.ipynb](notebooks/03_tweak2_dropout.ipynb) |
 | 3 | *TBD* | — | — | — | — | — | — | — |
