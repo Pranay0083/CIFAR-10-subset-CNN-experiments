@@ -108,12 +108,6 @@ Flatten → Linear(2048→128) → ReLU → Linear(128→10)
 | 4.1 | Wider + Dropout + Augmentation (15 ep) | 1,149,770 | 60.80% | -2.12% | Good generalization | [4.1_wider_filters_augmentation.ipynb](notebooks/4.1_wider_filters_augmentation.ipynb) |
 | 4.2 | Wider + Dropout + Aug + OneCycleLR (50 ep) | 1,149,770 | **75.00%** | +11.84% | Healthy | [4.2_augmentation_longer_training.ipynb](notebooks/4.2_augmentation_longer_training.ipynb) |
 
-### Phase 5 — Final Comparison
-
-| Notebook | Description |
-|---|---|
-| [5.0_final_comparison.ipynb](notebooks/5.0_final_comparison.ipynb) | Consolidates all results and key takeaways |
-
 ## Conclusion
 
 **Best model: 4.2 — Wider Filters + Dropout + Augmentation + OneCycleLR (50 epochs) → 75.00% val accuracy.**
