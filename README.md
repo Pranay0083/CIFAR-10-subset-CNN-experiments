@@ -59,9 +59,10 @@ Flatten → Linear(2048→128) → ReLU → Linear(128→10)
 | 1.4 | Wide Filters | 1,149,770 | 92.70% | 56.60% | 68.00% | +36.10% | Overfitting | [1.4_widening_information_bottleneck.ipynb](notebooks/1.4_widening_information_bottleneck.ipynb) |
 | 1.5 | Skip Connections | 1,190,922 | 95.54% | 56.00% | 57.10% | +39.54% | Overfitting | [1.5_skip_connections.ipynb](notebooks/1.5_skip_connections.ipynb) |
 | 1.6 | One Cycle LR | 1,190,922 | 99.12% | 57.30% | 57.70% | +41.82% | Overfitting | [1.6_one_cycle_lr.ipynb](notebooks/1.6_one_cycle_lr.ipynb) |
+| 2.1 | Stacked Blocks + Dropout | 289,194 | 63.10% | 63.60% | 63.60% | -0.50% | Well-regularized | [2.1_stacked_blocks_dropout.ipynb](notebooks/2.1_stacked_blocks_dropout.ipynb) |
+| 2.2 | Wider Filters (64→128→256) | 1,149,770 | 68.86% | 63.80% | 63.80% | +5.06% | Mild overfitting | [2.2_wider_filters.ipynb](notebooks/2.2_wider_filters.ipynb) |
 
 ## Conclusion
 
-**Best Model to proceed with:** Model 1.3 (Stacked Conv Blocks).
-It achieved the high stable validation accuracy (65.20%) while maintaining a reasonable parameter count. Although it clearly overfits (94% train vs 65% val), this indicates it has the capacity to learn the dataset well, making it the ideal candidate for applying regularization techniques (Phase 2).
+// TODO
 
